@@ -26,6 +26,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     
     assert_template :show
+    assert is_logged_in?
   end
   
 end
